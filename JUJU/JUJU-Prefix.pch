@@ -1,0 +1,46 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+#import "ASIHTTPRequest.h"
+#import "JSONKit.h"
+#import "NetWork.h"
+#import "APIS.h"
+#import "ActivityView.h"
+#import "MyAlertView.h"
+#import "Reachability.h"
+#import "ASIFormDataRequest.h"//上传数据post
+#import "MyViewController.h"
+#import "UIImage+UIImageScale.h"
+#import "PublicDictionary.h"
+#import "MyAlertV.h"
+
+#import "WeiboSDK.h"
+#import "WXApi.h"
+
+#endif
+
+#define kAppKey         @"2045436852"
+#define kRedirectURI    @"http://www.sina.com"
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:0.5]
+#define RGB(R,G,B) [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
+
+// 背景色
+#define BGColor RGB(10,10,10)
+// 字体色
+#define TextColor RGB(120,120,120)
