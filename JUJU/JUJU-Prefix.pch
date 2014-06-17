@@ -29,8 +29,8 @@
 #import "PublicDictionary.h"
 #import "MyAlertV.h"
 
-#import "WeiboSDK.h"
-#import "WXApi.h"
+//#import "WeiboSDK.h"
+//#import "WXApi.h"
 
 #endif
 

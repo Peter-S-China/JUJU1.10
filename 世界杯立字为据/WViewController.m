@@ -190,8 +190,8 @@ static bool WViewTAB = NO;
     //viewImage就是获取的截图，如果要将图片存入相册，只需在后面调用
     //UIImageWriteToSavedPhotosAlbum(ShareImage,nil,nil,nil);
     
-    [self changeScene:WXSceneTimeline];
-    [self sendImageContent];
+    //[self changeScene:WXSceneTimeline];
+    //[self sendImageContent];
 }
 
 -(void)WbBut
@@ -206,10 +206,10 @@ static bool WViewTAB = NO;
     //viewImage就是获取的截图，如果要将图片存入相册，只需在后面调用
     //UIImageWriteToSavedPhotosAlbum(ShareImage,nil,nil,nil);
     
-    [WeiboSDK enableDebugMode:YES];
-    [WeiboSDK registerApp:kAppKey];
+   // [WeiboSDK enableDebugMode:YES];
+   // [WeiboSDK registerApp:kAppKey];
 
-    WBMessageObject *message = [WBMessageObject message];
+    //WBMessageObject *message = [WBMessageObject message];
     //message.text = @"测试通过WeiboSDK发送文字到微博!";
 
 //    WBImageObject *image = [WBImageObject object];
@@ -217,12 +217,12 @@ static bool WViewTAB = NO;
 //    message.imageObject = image;
 
     
-    WBProvideMessageForWeiboResponse *response = [WBProvideMessageForWeiboResponse responseWithMessage:message];
-    
-    if ([WeiboSDK sendResponse:response])
-    {
-        [self dismissModalViewControllerAnimated:YES];
-    }
+//    WBProvideMessageForWeiboResponse *response = [WBProvideMessageForWeiboResponse responseWithMessage:message];
+//    
+//    if ([WeiboSDK sendResponse:response])
+//    {
+//        [self dismissModalViewControllerAnimated:YES];
+//    }
 
     
 }
@@ -236,7 +236,7 @@ static bool WViewTAB = NO;
 }
 //------------------------
 
-
+/*
 -(void) changeScene:(NSInteger)scene
 {
     _scene = scene;
@@ -268,7 +268,7 @@ static bool WViewTAB = NO;
     req.message = message;
     req.scene = _scene;
     
-    [WXApi sendReq:req];
+    //[WXApi sendReq:req];
 }
 
 
@@ -285,7 +285,7 @@ static bool WViewTAB = NO;
     }
 }
 
-
+*/
 
 
 @end

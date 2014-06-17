@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface WViewController : UIViewController<WXApiDelegate>
+@interface WViewController : UIViewController
 {
     UIImageView * _BackImage;
     UIButton * _Return;
@@ -20,7 +20,7 @@
     UIButton * _Msm;
     UIButton * _Wb;
     
-    enum WXScene _scene;
+   // enum WXScene _scene;
     
     UIImage * ShareImage;
 }

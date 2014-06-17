@@ -28,7 +28,7 @@ static RQIdflower ident;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    [WXApi registerApp:@"wxd930ea5d5a258f4f" withDescription:@"demo 2.0"];
+    //[WXApi registerApp:@"wxd930ea5d5a258f4f" withDescription:@"demo 2.0"];
     
     
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
